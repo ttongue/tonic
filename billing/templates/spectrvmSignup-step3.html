@@ -1,0 +1,72 @@
+<p>Please review and confirm the information below for your SPECTRVM provider membership application. If everything is correct, please complete the payment information and click on "Confirm" below charge your credit card and complete the signup process.
+<form action=spectrvm_signup.py method=POST>
+<p class=error><!--ERROR_MESSAGE--></p>
+<input type=hidden name=next_step value=4>
+<table>
+<tr valign=top><td valign=top>
+<table border=1>
+<tr>
+<td>Membership Level:</td><td>#MEMBERSHIP_LEVEL#</td>
+</tr>
+<tr><td>Organization:</td><td><input type=hidden name=organization value="#ORGANIZATION#">#ORGANIZATION#</td></tr>
+<input type=hidden name=over18 value="yes">
+<tr><td>First Name:</td><td><input type=hidden name=first_name value="#FIRST_NAME#">#FIRST_NAME#</td></tr>
+<tr><td>Last Name:</td><td><input type=hidden name=last_name  value="#LAST_NAME#">#LAST_NAME#</td></tr>
+<tr><td>Address:</td><td><input type=hidden name=address  value="#ADDRESS#">#ADDRESS#</tr>
+<tr><td>City:</td><td><input type=hidden name=city value="#CITY#">#CITY#</td></tr>
+<tr><td>State:</td><td><input type=hidden name=state value="#STATE#">#STATE#</td></tr>
+<tr><td>ZIP:</td><td><input type=hidden name=zip value="#ZIP#">#ZIP#</td></tr>
+<tr><td>E-mail:</td><td><input type=hidden name=email value="#EMAIL#">#EMAIL#</td></tr>
+<tr><td>Phone:</td><td><input type=hidden name=phone value="#PHONE#">#PHONE#</td></tr>
+<tr><td>Over 18:</td><td><input type=hidden name=over18 value="#OVER18#">#OVER18#</td></tr>
+<tr><td>Emergency Contact:</td><td><input type=hidden name=emergency_contact value="#EMERGENCY_CONTACT#">#EMERGENCY_CONTACT#</td></tr>
+<tr><td>Emergency Contact Relationship:</td><td><input type=hidden name=emergency_relationship value="#EMERGENCY_RELATIONSHIP#">#EMERGENCY_RELATIONSHIP#</tr>
+<tr><td>Emergency E-mail:</td><td><input type=hidden name=emergency_email value="#EMERGENCY_EMAIL#">#EMERGENCY_EMAIL#</td></tr>
+<tr><td>Emergency Phone:</td><td><input type=hidden name=emergency_phone value="#EMERGENCY_PHONE#">#EMERGENCY_PHONE#</tr>
+
+
+</table>
+</td><td>
+#CURRENT_INVOICE#
+</td></tr></table>
+<p>
+<table border=1>
+<tr valign=top><td valign=top>
+<table>
+<tr><td>Billing First Name:</td><td><input name=billing_first_name value="#FIRST_NAME#" size=20></td></tr>
+<tr><td>Billing Last Name:</td><td><input name=billing_last_name value="#LAST_NAME#" size=20></td></tr>
+<tr><td>Billing ZIP:</td><td><input name=billing_zip value="#ZIP#" size=20 maxlength=5></td></tr>
+<tr><td>Billing E-mail:</td><td><input name=billing_email value="#EMAIL#" size=20></td></tr>
+<tr><td>Credit Card Number:</td><td><input name=ccnum size=20 maxlength=16></td></tr>
+<tr><td>Credit Card Exp (MM / YYYY):</td><td><select name=mm>
+<option value="01">1
+<option value="02">2
+<option value="03">3
+<option value="04">4
+<option value="05">5
+<option value="06">6
+<option value="07">7
+<option value="08">8
+<option value="09">9
+<option value="10">10
+<option value="11">11
+<option value="12">12</select>
+
+/ <select name=yyyy>
+<option value="2015">2015
+<option value="2016">2016
+<option value="2017">2017
+<option value="2018">2018
+<option value="2019">2019
+<option value="2020">2020
+<option value="2021">2021
+<option value="2022">2022
+<option value="2023">2023
+</select>
+</td></tr>
+<tr><td>CVV:</td><td><input name=cvv type=text size=4 maxlength=4></td></tr>
+</table>
+</td></tr></table>
+</p>
+<p>By clicking on "Next>>" button below, you accept the <a href=https://ssl.techvalleycenterofgravity.com/billing/TermsOfService.py target=_new>Terms and Conditions of Service</a> and are authorizing the TVCOG billing system to charge your credit card for the current invoice amount. You furthermore authorize TVCOG to create a recurring billing profile that will charge your credit card on the 1st of each month for the monthly fees associated with your membership.</p>
+<input type=submit value="Next >>"></form>

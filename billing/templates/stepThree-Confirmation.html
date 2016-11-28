@@ -1,0 +1,26 @@
+<p>Please review and confirm the billing information below for your membership subscription. If there is a current invoice, the credit card provided will be charged immediately for the amount due. If everything is correct, click on "Confirm" below to process the transaction(s).
+<form action=recurring.py method=POST>
+#FORM_PARSE_RESULTS#
+<input type=hidden name=next_step value=4>
+<table>
+<tr valign=top><td valign=top>
+<table border=1>
+<tr>
+<td>Member Number:</td><td>#MEMBERSHIP_ID#</td> <input type=hidden name=member_id value=#MEMBERSHIP_ID#>
+</td>
+<tr>
+<td>Membership Level:</td><td>#MEMBERSHIP_LEVEL#<input type=hidden name=membership_level value="#MEMBERSHIP_LEVEL#"</td> 
+</tr>
+<tr><td>First Name:</td><td>#FIRST_NAME#<input type=hidden name=first_name value="#FIRST_NAME#"></td></tr>
+<tr><td>Last Name:</td><td>#LAST_NAME#<input type=hidden name=last_name value="#LAST_NAME#"></td></tr>
+<tr><td>ZIP:</td><td>#ZIP#<input type=hidden name=zip value="#ZIP#"></td></tr>
+<tr><td>E-mail:</td><td>#EMAIL#<input type=hidden name=email value="#EMAIL#"></td></tr>
+<tr><td>Credit Card Number:</td><td>#CC_NUMBER#<input type=hidden value="#CC_NUMBER#" name=ccnum></td></tr>
+<tr><td>Credit Card Exp (MM / YYYY):</td><td>#CC_MM# / #CC_YYYY#<input type=hidden name=mm value="#CC_MM#"><input type=hidden name=yyyy value="#CC_YYYY#"></td></tr>
+<tr><td>CVV:</td><td>#CC_CVV#<input type=hidden name=cvv value="#CC_CVV#"></td></tr>
+</table>
+</td><td>
+#CURRENT_INVOICE#
+</td></tr></table>
+<p>By clicking on "Next>>" button below, you accept the <a href=https://ssl.techvalleycenterofgravity.com/billing/TermsOfService.py target=_new>Terms and Conditions of Service</a> and are authorizing the TVCOG billing system to charge your credit card for the current invoice amount. You furthermore authorize TVCOG to create a recurring billing profile that will charge your credit card on the 1st of each month for the monthly fees associated with your membership.</p>
+<input type=submit value="Next >>"></form>

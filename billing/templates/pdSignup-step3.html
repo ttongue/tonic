@@ -1,0 +1,33 @@
+<p>Please review and confirm the information below for your membership application. If everything is correct, please click on "Confirm" below to complete the signup process.
+<form action=pd_signup.py method=POST>
+<p class=error><!--ERROR_MESSAGE--></p>
+<input type=hidden name=next_step value=4>
+<input type=hidden name=couponcode value="#COUPONCODE#">
+<table>
+<tr valign=top><td valign=top>
+<table border=1>
+<tr>
+<td>Membership Level:</td><td>#MEMBERSHIP_LEVEL#</td>
+</tr>
+<tr><td>First Name:</td><td><input type=hidden name=first_name value="#FIRST_NAME#">#FIRST_NAME#</td></tr>
+<tr><td>Last Name:</td><td><input type=hidden name=last_name  value="#LAST_NAME#">#LAST_NAME#</td></tr>
+<tr><td>Address:</td><td><input type=hidden name=address  value="#ADDRESS#">#ADDRESS#</tr>
+<tr><td>City:</td><td><input type=hidden name=city value="#CITY#">#CITY#</td></tr>
+<tr><td>State:</td><td><input type=hidden name=state value="#STATE#">#STATE#</td></tr>
+<tr><td>ZIP:</td><td><input type=hidden name=zip value="#ZIP#">#ZIP#</td></tr>
+<tr><td>E-mail:</td><td><input type=hidden name=email value="#EMAIL#">#EMAIL#</td></tr>
+<tr><td>Phone:</td><td><input type=hidden name=phone value="#PHONE#">#PHONE#</td></tr>
+<tr><td>Over 18:</td><td><input type=hidden name=over18 value="#OVER18#">#OVER18#</td></tr>
+<tr><td>Emergency Contact:</td><td><input type=hidden name=emergency_contact value="#EMERGENCY_CONTACT#">#EMERGENCY_CONTACT#</td></tr>
+<tr><td>Emergency Contact Relationship:</td><td><input type=hidden name=emergency_relationship value="#EMERGENCY_RELATIONSHIP#">#EMERGENCY_RELATIONSHIP#</tr>
+<tr><td>Emergency E-mail:</td><td><input type=hidden name=emergency_email value="#EMERGENCY_EMAIL#">#EMERGENCY_EMAIL#</td></tr>
+<tr><td>Emergency Phone:</td><td><input type=hidden name=emergency_phone value="#EMERGENCY_PHONE#">#EMERGENCY_PHONE#</tr>
+
+
+</table>
+</td><td>
+</td></tr></table>
+<p>
+</p>
+<p>By clicking on "Next>>" button below, you accept the <a href=https://ssl.techvalleycenterofgravity.com/billing/TermsOfService.py target=_new>Terms and Conditions of Service</a>. </p>
+<input type=submit value="Next >>"></form>

@@ -1,0 +1,4 @@
+CREATE TABLE payment_tokens (
+   member_id	INT 	PRIMARY KEY,
+   payment_token	CHAR(15)
+);

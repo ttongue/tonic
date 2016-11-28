@@ -1,0 +1,12 @@
+Dear #FIRST_NAME# #LAST_NAME#,
+
+Thank you for using the TVCOG billing system to arrange payment of your 
+membership dues! This e-mail is a reciept of the most recent transaction which
+had the following results reported:
+
+#RESULTS#
+
+If you have any questions, comments or concerns about the output of this 
+payment system, please contact Tom Tongue 
+(ttongue@techvalleycenterofgravity.com)  to look into the issue. 
+

@@ -1,0 +1,29 @@
+Dear #FIRST_NAME# #LAST_NAME#,
+
+Thank you for signing up as a service provider for SPECTRVM at the
+Tech Valley Center of Gravity! This e-mail is a receipt of your online 
+billing transaction.
+
+Purchase Details:
+
+#RESULTS#
+
+If you have any questions, comments or concerns about TVCOG online billing, 
+please contact Tom Tongue (ttongue@techvalleycenterofgravity.com).
+
+
+====IMPORTANT NEXT STEPS====
+You've taken the first important step toward becoming a SPECTRVM Service
+Provider of the Tech Valley Center of Gravity, but you need to complete 
+the following steps to finish the new member process:
+
+   -- Complete your organizations profile information for inclusion in the
+      SPECTRVM provider directory and associated materials at
+      http://systems.techvalleycenterofgravity.com/spectrvm/providerInfo.py 
+
+   -- If you have not already done so, please join the Facebook page 
+      (see http://www.facebook.com/groups/capitaldistrictindustrialclub/ )
+      to keep in touch with other members, and check the calendar at
+      http://www.techvalleycenterofgravity.com/ for new events!
+
+Welcome to TVCOG!

@@ -1,0 +1,40 @@
+<p>This set of forms will guide you through the membership signup process for the Tech Valley Center of Gravity. Please select the type of membership plan you wish to enroll in:
+<form action=signup.py method=POST>
+<input type=hidden name=next_step value=2>
+<!--break-->
+<ol> <input type=radio name=plan value="associate"><strong>Associate Member</strong> - $25 one time fee
+    <ul type=square><li>Only created when a membership, class, or bundle of day-passes is purchased.
+    <li>Membership Card
+    <li>Eligible for equipment training classes
+    <li>Safety/Orientation and Training class (see below) required for any unsupervised equipment use.
+    </ul></li><br/>
+<input type=radio name=plan value="full"><strong>Full Member</strong> - $60/month 
+    <ul><li>Membership Card
+    <li>Eligible for equipment training classes
+    <li>Safety/Orientation class included in first month’s membership
+    <li>Access to the Makerspace during all official open hours
+    <li>Eligible for volunteer discount (see below)
+    <li>Voting privileges
+    </ul></li><br/>
+<input type=radio name=plan value="super"><strong>Super User</strong> - $100/month
+    <ul><li>All benefits of full membership
+    <li>24/7 Personal Card Access and on-site storage bin included
+    </ul></li><br/>
+<input type=checkbox name=student value="student"><strong>Student Discount</strong> - Full or Super -$30/month
+    <ul><li>Discount for Students / Teachers 
+    </ul></li><br/>
+<input type=checkbox name=family value="family"><strong>Add Family Membership</strong> - Full or Super +$20/month
+    <ul><li>All benefits of  the base membership purchased
+    <li>includes all immediate family members (children, spouses) who have attended safety training (class fee not included)
+    </ul></li><br/>
+<!--<li><strong>Organizational Memberships</strong> - $200/month/seat
+    <ul><li>As many representatives of organization as desired can be approved to use a single seat (Normal $25 fee applies per person for safety training)
+    <li>Each representative can have their own membership card
+    <li>Each representative is eligible for equipment training classes    
+    <li>Each seat purchased may be used by any (safety trained) representative of the purchasing organization.
+    <li>Access to the makerspace during all official open hours
+    <li>Active representatives may bring guests under conditions common to all guests (no unsupervised machine/tool usage, signed guest waivers, etc.)
+    </ul></li> -->
+</ol>
+<input type=submit value="Next>>"></form>
+</form>

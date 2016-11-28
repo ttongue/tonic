@@ -1,0 +1,18 @@
+The certificate membership signup system was used by 
+#FIRST_NAME# #LAST_NAME# for member number #MEMBER_ID#. Below 
+are the results from the processing system that were reported to the user:
+
+#RESULTS#
+
+This system automatically creates an account for the user which will expire
+at the end of the prepaid membership period, and memberships can be continued
+from there at the individuals expense.  If there is an issue, you can 
+reach #FIRST_NAME# #LAST_NAME# through their e-mail address #EMAIL#
+
+#ADDITIONAL_COMMENTS#
+
+If you have any questions, comments or concerns about the output of this 
+payment system, please contact Tom Tongue 
+(ttongue@techvalleycenterofgravity.com)  to look into the issue. 
+
+

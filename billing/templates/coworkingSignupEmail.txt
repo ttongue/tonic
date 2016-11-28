@@ -1,0 +1,32 @@
+Dear #FIRST_NAME# #LAST_NAME#,
+
+Thank you for your membership in the Tech Valley Center of Gravity! This e-mail
+is a receipt of your online billing transaction.
+
+Purchase Details:
+
+#RESULTS#
+
+If you have any questions, comments or concerns about TVCOG online billing, 
+please contact Tom Tongue (ttongue@techvalleycenterofgravity.com).
+
+
+====IMPORTANT NEXT STEPS====
+You've taken the first important step toward becoming a member of the Tech 
+Valley Center of Gravity, but you need to complete the following steps to 
+finish the new member process:
+
+   --  You can request an access control fob to let you into the Center 
+       of Gravity using the form at:
+
+           http://www.tvcog.net/access-control-fob-request-form/
+
+       This form requires a good quality headshot (think passport!) 
+       for our records for identification purposes.                            
+
+   -- If you have not already done so, please join the Facebook page 
+      (see http://www.facebook.com/groups/capitaldistrictindustrialclub/ )
+      to keep in touch with other members, and check the calendar at
+      http://www.techvalleycenterofgravity.com/ for new events!
+
+Welcome to TVCOG!

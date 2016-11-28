@@ -1,0 +1,104 @@
+
+<p>Welcome to the Tech Valley Center of Gravity. If you want to join the TVCOG, please use our <a href=https://ssl.techvalleycenterofgravity.com/billing/signup.py target=_new>Online Membership Signup Form</a>. Otherwise, please sign in using one of the options below:</p>
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><th width=500 bgcolor=#404040><u>Member Sign-In</u></th>
+<th width=100 rowspan=2></th>
+<th width=500 bgcolor=#404040><u>Guest Sign-In</u></th></tr>
+<tr><td valign=top bgcolor=#404040>
+<p>Welcome Back! Please provide the information below to sign in:</p>
+<p class=error><!--ERROR_MESSAGE--></p>
+<form action=signin.py method=POST><p align=center><center>
+<table border=1 cellpadding=0 cellspacing=0 bgcolor=#404040>
+<tr>
+<td> 
+<table border=0 bgcolor=#404040 width=450>
+<tr><td align=right width=50%>Member Number: </td><td><input type=text size=4 name=id></td></tr>
+<tr><td align=right width=50%>ZIP:</td><td><input type=text size=5 name=zip></td></tr>
+<tr><td colspan=2 align=center><center><input type=submit value="Sign In!"</center></td></tr>
+</table></td></tr>
+<tr border=0><td></td></tr>
+<tr border=0><td></td></tr>
+<tr border=0><td></td></tr>
+<tr>
+<td>
+<table border=0 bgcolor=#404040>
+<tr><td colspan=2><u>Currently Signed In:</u></td></tr>
+<tr><td colspan=2>
+<div id="loaddiv">
+</div>
+</td></tr>
+</table></td></tr>
+
+</table></center></p>
+</form>
+</td>
+<td valign=top bgcolor=#404040>
+<p class=error><!--ERROR_MESSAGE2--></p>
+<form action=signin.py method=POST>
+<input type=hidden name=id value="-1">
+<table border=0 bgcolor=#404040>
+<tr><td>Guest Name:</td><td><input type=text name=name size=40></td></tr>
+<tr><td>Guest ZIP Code:</td><td><input type=text name=zip size=40></td></tr>
+<tr><td>Guest E-mail:</td><td><input type=text name=email size=40></td></tr>
+<tr><td colspan=2><input type=checkbox checked name=subscribe value="1">Please subscribe me to your e-mail list for announcements of events and classes</td></tr>
+<p></p>
+<tr><td colspan=2><p>Please read over the liability waiver below:</p>
+<textarea name=liability readonly rows=10 cols=64>
+                            Guest Liability Waiver 
+                            ----------------------
+
+In consideration for my permitted entry into the facilities of the Tech Valley
+Center of Gravity, I agree as a guest (GUEST) in this facility to the following
+waiver and release:
+
+ASSUMPTION OF RISK: I acknowledge that inherent risks, dangers and hazards
+exist when using power tools commonly used in electronics construction,
+fabrication, software design and other technology related activities.
+Participation in such activities and/or the use of equipment associated with
+technology design, manufacture and experimentation may result in injury,
+illness, death or damage to personal property. These risks and dangers may be
+caused by other participants, members or by accidents, acts of nature or other
+causes. Risks and dangers may arise from foreseeable or unforeseeable causes
+including, but not limited to electrocution, burns, impalement, injury from
+slips or falls, etc.
+
+RELEASE OF LIABILITY: The GUEST fully assumes all risks associated with
+participation in events and exempts and releases Tech Valley Center of Gravity,
+its members, officers, agents and board members, from any action whatsoever
+arising out of any damage, loss or injury to the participant or the
+participant’s property while upon the premises or using any equipment of the
+organization or while participating in any of the activities contemplated by
+this agreement whether such loss, damage, or injury results from the negligence
+of the corporation, its members, agents, or from some other cause. 
+
+COVENANT NOT TO SUE: The GUEST agrees never to institute any suit or action at
+law or otherwise against Tech Valley Center of Gravity, its members, officers,
+board members, agents, nor to initiate or any way assist the prosecution of any
+claim for damages or course of action which the GUEST, GUEST’s heirs, executors
+or administrators hereafter may have by reason of injury to the person of the
+GUEST or to the participant’s property arising from the activities contemplated
+by this agreement.
+
+THIRD PARTY INDEMNIFICATION: The GUEST will indemnify, save and hold harmless
+Tech Valley Center of Gravity, its members, officers, board members, or agents
+from any and all losses, claims, actions, or proceedings of every kind and
+character which may be presented or initiated by any other persons or
+organizations and which arise directly or indirectly from the actions of the
+GUEST while engaged in the activities contemplated by this agreement.
+
+RECORDINGS: The GUEST acknowledges that Makerspace events may be recorded in
+audio, visual, and/or audiovisual media and you consents to the making and use
+of such recordings by Tech Valley Center of Gravity and/or its licensees for
+any purpose. The GUEST releases Tech Valley Center of Gravity and its licensees
+from and waives any claims related to or arising by reason of the making and/or
+use of any such recordings. The GUEST grants to Tech Valley Center of Gravity
+the right to use his/her name and likeness in connection with the use of these
+recordings.
+</textarea></td></tr>
+<tr><td colspan=2><input type=checkbox name=liabilityAgreed value="yes">I have read the above liability waiver and agree to the terms.</td></tr>
+<tr><td><input type=submit value="Submit"></form></td></tr></table>
+</td></tr></table>
+
+
+

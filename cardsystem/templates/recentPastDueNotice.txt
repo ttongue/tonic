@@ -1,0 +1,39 @@
+Dear #FIRST_NAME# #LAST_NAME#,
+
+Thank you for being a member of the Tech Valley Center of Gravity!
+Our records indicate that you are paid through #PAID_THRU#, and your membership
+is now past due. You can now pay your current membership fees and sign up for
+recurring billing using our new billing system at:
+
+     https://ssl.techvalleycenterofgravity.com/billing/recurring.py
+
+This system is secure and PCI compliant, and does not store credit card
+information locally, but instead uses a subscription billing service offered
+through the credit card processor. Alternatively, you can just make a payment 
+via Paypal using:
+
+     http://www.techvalleycenterofgravity.com/node/318
+
+Membership Information:
+-----------------------
+   Name:              #FIRST_NAME# #LAST_NAME#
+   Membership ID:     #MEMBERSHIP_ID#
+   Membership Plan:   #MEMBERSHIP_PLAN#
+   Membership Rate:   #MEMBERSHIP_RATE#
+
+   Billing Period:    #BILLING_PERIOD#
+   Fees:              #FEES#
+   Adjustments:       #DISCOUNTS#
+
+   Currently Due:     #CURRENTLY_DUE#
+
+Your prompt payment ensures we can continue to operate, and prevents any
+interruption in service (the RFID card system blocks entry of cards 15 days
+past due) Please contact our treasurer (Irene Purificato) at 
+treasurer@techvalleycenterofgravity.com if you have any questions, comments
+or concerns!
+
+Irene Purificato
+Treasurer, Tech Valley Center of Gravity
+E-mail: treasurer@techvalleycenterofgravity.com
+

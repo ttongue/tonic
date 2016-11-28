@@ -1,0 +1,48 @@
+<table border=0><TR><td width=525>
+<p>To purchase a day pass for your Associate member account, complete the form below. If you are not yet a member, please use our <a href=https://ssl.techvalleycenterofgravity.com/billing/signup.py target=_new>Online Membership Signup Form</a>.</p>
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><th width=500 bgcolor=#E0E0E0><u>Member Info</u></th>
+</tr>
+<tr><td valign=top bgcolor=#E0E0E0>
+<p>Please provide the information below to purchase day pass(es) :</p>
+<p class=error><!--ERROR_MESSAGE--></p>
+<form id="checkout" action="/billing/buyDayPass.py" method="POST"><p align=center><center>
+<input type=hidden name=step value="1">
+<table border=1 cellpadding=0 cellspacing=0 bgcolor=#E0E0E0>
+<tr>
+<td> 
+<table border=0 bgcolor=#E0E0E0 width=450>
+<tr><td align=right width=50%>Member Number: </td><td><input type=text size=4 name=id></td></tr>
+<tr><td align=right width=50%>ZIP:</td><td><input type=text size=5 name=zip></td></tr>
+<tr><td align=right width=50%>Option:</td><td>
+<select name=bundle>
+<option value=1>Single Day Pass - $25</option>
+<option value=3>Three Day Passes -$50</option>
+<option value=7>Seven Day Passes -$100 (BEST VALUE!)</option>
+</select></td></tr>
+<tr><td align=right colspan=2>
+  <div id="payment-form"></div>
+</td></tr>
+
+<tr><td colspan=2 align=center><center><input type=submit value="Purchase!"</center></td></tr>
+</table></td></tr>
+</form>
+
+</td></tr></table>
+</td></tr></table>
+
+<script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+<script>
+// We generated a client token for you so you can copy and paste this code
+// and try it out right away. See the section below to generate your
+// own client token.
+var clientToken = "<!--CLIENT_TOKEN-->";
+
+braintree.setup(clientToken, "dropin", {
+  container: "payment-form"
+});
+</script>
+
+
+</td></tr></table>

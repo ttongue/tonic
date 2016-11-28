@@ -1,0 +1,5 @@
+CREATE TABLE subscription_info (
+   member_id	INT 	PRIMARY KEY,
+   plan_id	CHAR(35),
+   subscription_id	CHAR(15)
+);

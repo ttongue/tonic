@@ -1,0 +1,50 @@
+<p>Below is the billing information for your account. Some of the fields have been populated with information from the member database, but can be edited to reflect your actual billing information corresponding to the credit card to be used. You are currently signed up for an Associate membership, but you can use this
+form to upgrade to another membership tier.
+<form action=recurring.py method=POST>
+<input type=hidden name=next_step value=3>
+<table border=1>
+<tr valign=top><td valign=top>
+<table>
+<tr>
+<td>Member Number:</td><td>#MEMBERSHIP_ID#</td> <input type=hidden name=member_id value=#MEMBERSHIP_ID#>
+</td>
+<tr>
+<td>Membership Level:</td><td>#MEMBERSHIP_LEVEL#</td> 
+</tr>
+<tr><td>First Name:</td><td><input name=first_name value="#FIRST_NAME#" size=20></td></tr>
+<tr><td>Last Name:</td><td><input name=last_name value="#LAST_NAME#" size=20></td></tr>
+<tr><td>ZIP:</td><td><input name=zip value="#ZIP#" size=20 maxlength=5></td></tr>
+<tr><td>E-mail:</td><td><input name=email value="#EMAIL#" size=20></td></tr>
+<tr><td>Credit Card Number:</td><td><input name=ccnum size=20 maxlength=16></td></tr>
+<tr><td>Credit Card Exp (MM / YYYY):</td><td><select name=mm>
+<option value="01">1
+<option value="02">2
+<option value="03">3
+<option value="04">4
+<option value="05">5
+<option value="06">6
+<option value="07">7
+<option value="08">8
+<option value="09">9
+<option value="10">10
+<option value="11">11
+<option value="12">12</select>
+
+ / <select name=yyyy>
+<option value="2015">2015
+<option value="2016">2016
+<option value="2017">2017
+<option value="2018">2018
+<option value="2019">2019
+<option value="2020">2020
+<option value="2021">2021
+<option value="2022">2022
+</select>
+</td></tr>
+<tr><td>CVV:</td><td><input name=cvv type=text size=4 maxlength=4></td></tr>
+</table>
+</td><td>
+#CURRENT_INVOICE#
+</td></tr></table>
+<p>Click "Next>>" below to review your pending membership subscription.</p>
+<input type=submit value="Next >>"></form>

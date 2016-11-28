@@ -1,0 +1,6 @@
+CREATE TABLE workspaces (
+   transaction_id	INT	AUTO_INCREMENT PRIMARY KEY,
+   member_id	INT,
+   start_datetime	DATETIME,
+   end_datetime		DATETIME
+);

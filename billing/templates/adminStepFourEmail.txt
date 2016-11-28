@@ -1,0 +1,18 @@
+The recurring billing system was used by #FIRST_NAME# #LAST_NAME# for 
+member number #MEMBER_ID#. Below are the results from the processing system
+that were reported to the user:
+
+#RESULTS#
+
+Please check the merchant account at Braintree to confirm that the transaction 
+proceeded according to plan, and apply any appropriate credits to their
+account. If there is an issue, you can reach #FIRST_NAME# #LAST_NAME# through
+their e-mail address #EMAIL#
+
+#ADDITIONAL_COMMENTS#
+
+If you have any questions, comments or concerns about the output of this 
+payment system, please contact Tom Tongue 
+(ttongue@techvalleycenterofgravity.com)  to look into the issue. 
+
+

@@ -1,0 +1,31 @@
+<p>Below is the billing information for your new organizational membership. Membership in the Tech Valley Center of Gravity is provided under the terms of the Services Addendum, Policies and Procedures, and Membership & Service Agreement found in the <a href=https://ssl.techvalleycenterofgravity.com/forms/TVCOG-MembershipPacket.pdf target=_new>Membership Packet PDF</a>. Please review these terms of service and then complete the membership information below:
+<p class=error><!--ERROR_MESSAGE--></p>
+<form action=organization_signup.py method=POST>
+<input type=hidden name=next_step value=3>
+<table border=1>
+<tr valign=top><td valign=top>
+<table>
+<tr>
+<td>Membership Level:</td><td>#MEMBERSHIP_LEVEL#</td> 
+</tr>
+<tr><td>Organization:</td><td><input name=organization size=50 #ORGANIZATION#><
+/td></tr>
+<tr><td>Primary Contact First Name:</td><td><input name=first_name size=50 #FIRST_NAME#></td></tr>
+<tr><td>Primary Contact Last Name:</td><td><input name=last_name  size=50 #LAST_NAME#></td></tr>
+<tr><td>Address:</td><td><input name=address  size=50 #ADDRESS#></td></tr>
+<tr><td>City:</td><td><input name=city  size=50 #CITY#></td></tr>
+<tr><td>State:</td><td><input name=state  size=50 #STATE#></td></tr>
+<tr><td>ZIP:</td><td><input name=zip size=30 maxlength=5 #ZIP#></td></tr>
+<tr><td>E-mail:</td><td><input name=email size=30 #EMAIL#></td></tr>
+<tr><td>Phone:</td><td><input name=phone size=30 #PHONE#></td></tr>
+<input type=hidden name=over18 value="yes">
+<tr><td>Emergency Contact:</td><td><input name=emergency_contact  size=30 #EMERGENCY_CONTACT#></td></tr>
+<tr><td>Emergency Contact Relationship:</td><td><input name=emergency_relationship size=30 #EMERGENCY_RELATIONSHIP#></td></tr>
+<tr><td>Emergency E-mail:</td><td><input name=emergency_email size=30 #EMERGENCY_EMAIL#></td></tr>
+<tr><td>Emergency Phone:</td><td><input name=emergency_phone size=30 #EMERGENCY_PHONE#></td></tr>
+</table>
+</td><td>
+#CURRENT_INVOICE#
+</td></tr></table>
+<p>Click "Next>>" below to review your pending membership subscription.</p>
+<input type=submit value="Next >>"></form>

@@ -1,0 +1,37 @@
+Dear #FIRST_NAME# #LAST_NAME#,
+
+Thank you for being a member of the Tech Valley Center of Gravity!
+Our records indicate that you are paid through #PAID_THRU#, but your
+membership has lapsed by several months. An update to the card system
+will block entry to the makerspace for your card until the account 
+is brought current. Below is the account status as of today:
+
+Membership Information:
+-----------------------
+   Name:              #FIRST_NAME# #LAST_NAME#
+   Membership ID:     #MEMBERSHIP_ID#
+   Membership Plan:   #MEMBERSHIP_PLAN#
+   Membership Rate:   #MEMBERSHIP_RATE#
+
+   Billing Period:    #BILLING_PERIOD#
+   Fees:              #FEES#
+   Adjustments:       #DISCOUNTS#
+
+   Currently Due:     #CURRENTLY_DUE#
+
+We realize it can be easy to fall behind on membership payments, and you 
+can make a payment now via Paypal using:
+
+     http://www.techvalleycenterofgravity.com/node/318
+
+Please contact our treasurer (Irene Purificato) at 
+treasurer@techvalleycenterofgravity.com to discuss the status of your account.
+Without any intervention, your membership will be automatically converted to
+an Associate membership, and any use of the facilities outside of classes and
+select events will require a day pass. #RFID_MESSAGE# 
+
+Please contact us with any questions, comments or concerns.
+
+Irene Purificato
+Treasurer, Tech Valley Center of Gravity
+E-mail: treasurer@techvalleycenterofgravity.com
