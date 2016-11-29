@@ -8,13 +8,12 @@ import cgi
 import MySQLdb as mdb
 import seltzerCfg as seltzer
 import memberSystemMySQL as memberSystem
+import tvcogCfg as tvcog
 import datetime
 import re
 import os
 import mailchimp
 
-API_KEY='4996de74dfadd3d7f281c0c2a17c7021-us12'
-LIST_ID='dc7414bae9'
 
 def logoutTransaction(trans_id):
    con=mdb.connect(memberSystem.MYSQL_HOST,memberSystem.MYSQL_USER,memberSystem.MYSQL_PASS,memberSystem.MYSQL_CARDSYSTEM_DB)
@@ -70,8 +69,8 @@ def recordSignIn(member_id,name,zip,email,subscribe):
    query="insert into %s SET member_id=%s, name='%s', email='%s', zip='%s', start_datetime='%s', mailing_list=%s "%(memberSystem.MYSQL_SIGNIN_TABLE,member_id,name,email,zip,start_datetime,subscribe)
    if (subscribe == "1"):
       try:
-      	api=mailchimp.Mailchimp(API_KEY)
-      	api.lists.subscribe(LIST_ID, {'email': email})
+      	api=mailchimp.Mailchimp(tvcog.MAILCHIMP_API_KEY)
+      	api.lists.subscribe(tvcog.MAILCHIMP_LIST_ID, {'email': email})
       except mailchimp.ListAlreadySubscribedError:
 	subscribe="0"
    cur.execute(query)
