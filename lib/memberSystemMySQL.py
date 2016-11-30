@@ -753,7 +753,11 @@ def getProratedRateFromToday(rate):
    # Previously we used this:
    # return rate*(1.0+((1.0*(daysInMonth-thisDay))/(1.0*daysInMonth)))
    # Now we do this:
-   return rate*((1.0*(daysInMonth-thisDay))/(1.0*daysInMonth))
+   prorated=rate*((1.0*(daysInMonth-thisDay))/(1.0*daysInMonth))
+   # It is a pain to collect less than $2, so there is a minimum charge.
+   if (prorated < 2):
+       prorated=2
+   return prorated
 
  
 
