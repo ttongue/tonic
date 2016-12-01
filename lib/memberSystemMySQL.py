@@ -592,6 +592,12 @@ def howManyMonthsDue(memberRecord):
    numMonths=(daySpan.days-(daySpan.days % 28))/28
    return numMonths
 
+def howManyDaysDue(memberRecord):
+   start=calcBillingPeriodStartDateTime(memberRecord)
+   end=calcBillingPeriodEndDateTime(memberRecord)
+   daySpan=end-start
+   return daySpan.days
+
 def calcBillingPeriodStart(memberRecord):
    paidThruDateTime=calcBillingPeriodStartDateTime(memberRecord)
    billStart=paidThruDateTime.strftime('%m/%d/%Y')
