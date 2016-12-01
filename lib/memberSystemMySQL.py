@@ -130,13 +130,13 @@ def getInvoiceHTML(memberRecord):
    # todaysDiscountFile = "/var/www/html/cardsystem/MemberDiscounts.txt"
    # discounts=loadDiscountDatabase(todaysDiscountFile)
    # memberDiscounts=getDiscountsForMember(discounts,memberRecord[DBCOL_MEMBER_NUMBER],memberRecord[DBCOL_PAID_THRU])
-   for line in memberDiscounts:
-       thisDiscountAmount=int(line[DISCOUNT_AMOUNT])
-       adjustments=adjustments+thisDiscountAmount
-       thisDiscountDescription=line[DISCOUNT_DESCRIPTION]
-       replacementString="#DISCOUNTS#<br>\n                      $%d" % thisDiscountAmount
-       replacementString=replacementString+"    %s" % thisDiscountDescription
-       outText=outText.replace("#DISCOUNTS#",replacementString)
+   #for line in memberDiscounts:
+   #    thisDiscountAmount=int(line[DISCOUNT_AMOUNT])
+   #    adjustments=adjustments+thisDiscountAmount
+   #    thisDiscountDescription=line[DISCOUNT_DESCRIPTION]
+   #    replacementString="#DISCOUNTS#<br>\n                      $%d" % thisDiscountAmount
+   #    replacementString=replacementString+"    %s" % thisDiscountDescription
+   #    outText=outText.replace("#DISCOUNTS#",replacementString)
    amtDue="$%d" % (fees+adjustments)
    if (adjustments == 0):
         outText=outText.replace("#DISCOUNTS#","N/A")
