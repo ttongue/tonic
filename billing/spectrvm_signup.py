@@ -15,12 +15,6 @@ import btlib
 import os
 from calendar import monthrange
 
-# braintree.Configuration.configure(
-#     braintree.Environment.Sandbox,
-#     "mvb2qkcvbb6fnr85",
-#     "g7yn7kqsf6vxt64s",
-#     "5375b0a83ea61ecd3d807e4373e70519"
-# )
 
 print("Content-type: text/html\n\n")
 header=memberSystem.loadTemplate("templates/spectrvm_header.html")

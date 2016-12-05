@@ -22,16 +22,6 @@ sys.setdefaultencoding('utf8')
 
 DEBUG=False
 
-if (DEBUG):
-  braintree.Configuration.configure(braintree.Environment.Sandbox,
-                                  merchant_id="mvb2qkcvbb6fnr85",
-                                  public_key="g7yn7kqsf6vxt64s",
-                                  private_key="5375b0a83ea61ecd3d807e4373e70519")
-else:
-  braintree.Configuration.configure(braintree.Environment.Production,
-                                  merchant_id="998p6ptnd7ppkg7m",
-                                  public_key="v8f4hptfchw97dtk",
-                                  private_key="afc4b695d4e02ec9a5f84c6ad7379d31")
 
 
 def stepOne(importantMessage,importantMessageGuest):

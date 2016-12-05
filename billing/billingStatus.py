@@ -26,12 +26,6 @@ MYSQL_SUBSCRIPTION_INFO_TABLE = tvcog.MYSQL_SUBSCRIPTION_INFO_TABLE
 ACTIVE_WINDOW = 3  # Number of months back from today that we should consider
 		   # for this script
 
-#braintree.Configuration.configure(
-#    braintree.Environment.Sandbox,
-#    "mvb2qkcvbb6fnr85",
-#    "g7yn7kqsf6vxt64s",
-#    "5375b0a83ea61ecd3d807e4373e70519"
-#)
 
 # print("Content-type: text/html\n\n")
 header=memberSystem.loadTemplate("templates/header.html")
