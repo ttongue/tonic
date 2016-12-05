@@ -405,7 +405,7 @@ def loadMemberDatabase():
 
 def loadDiscountDatabase():
     outList=[]
-    #try:
+    try:
     #    text=csv.reader(open(filestr,"r"),delimiter=',',quotechar='"')
     #
     #    for args in text:
