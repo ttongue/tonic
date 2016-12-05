@@ -462,7 +462,7 @@ def getDiscountsForMember(discountDatabase,memberID,paidThru):
     if (len(paidThruSplit) < 3):
         return discounts
     pTN=int("{0:s}{1:02d}{2:02d}".format(paidThruSplit[2],int(paidThruSplit[0]),int(paidThruSplit[1])))
-    if (len discountDatabase)>0):
+    if (len(discountDatabase)>0):
         for line in discountDatabase:
             discDate=slash.split(line[DISCOUNT_DATE])
             ddN=int("{0:s}{1:02d}{2:02d}".format(discDate[2],int(discDate[0]),int(discDate[1])))
