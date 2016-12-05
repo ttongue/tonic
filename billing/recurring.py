@@ -308,9 +308,9 @@ try:
    todayNum=int(today.strftime('%Y%02m%02d'))
    todaysMemberFile = "/var/www/html/cardsystem/MemberDatabase-%s.txt" % datestr
    #todaysDiscountFile = "/var/www/html/cardsystem/MemberDiscounts-%s.txt" % datestr
-   todaysDiscountFile = "/var/www/html/cardsystem/MemberDiscounts.txt"
+   #todaysDiscountFile = "/var/www/html/cardsystem/MemberDiscounts.txt"
    members=memberSystem.loadMemberDatabase()
-   discounts=memberSystem.loadDiscountDatabase(todaysDiscountFile)
+   discounts=memberSystem.loadDiscountDatabase()
 
    form = cgi.FieldStorage()
    step = form.getfirst("next_step","")

@@ -403,22 +403,22 @@ def loadMemberDatabase():
     return outList
 
 
-def loadDiscountDatabase(filestr):
+def loadDiscountDatabase():
     outList=[]
-    try:
-        text=csv.reader(open(filestr,"r"),delimiter=',',quotechar='"')
-
-        for args in text:
-            args.reverse()
-            memNumString=args.pop()
-            memNumString=re.sub('\D+','',memNumString)
-            if (memNumString!=""):
-                args.append(int(memNumString))
-                args.reverse()
-                outList.append(tuple(args))
-            else:
-                args.append(memNumString)
-                args.reverse()
+    #try:
+    #    text=csv.reader(open(filestr,"r"),delimiter=',',quotechar='"')
+    #
+    #    for args in text:
+    #        args.reverse()
+    #        memNumString=args.pop()
+    #        memNumString=re.sub('\D+','',memNumString)
+    #        if (memNumString!=""):
+    #            args.append(int(memNumString))
+    #            args.reverse()
+    #            outList.append(tuple(args))
+    #        else:
+    #            args.append(memNumString)
+    #            args.reverse()
       #print "skipped %s"%memNumString +args[3] + " "+ args[4] + "   "+args[DBCOL_PLAN]
 
         return outList
@@ -462,11 +462,12 @@ def getDiscountsForMember(discountDatabase,memberID,paidThru):
     if (len(paidThruSplit) < 3):
         return discounts
     pTN=int("{0:s}{1:02d}{2:02d}".format(paidThruSplit[2],int(paidThruSplit[0]),int(paidThruSplit[1])))
-    for line in discountDatabase:
-        discDate=slash.split(line[DISCOUNT_DATE])
-        ddN=int("{0:s}{1:02d}{2:02d}".format(discDate[2],int(discDate[0]),int(discDate[1])))
-    if ((line[DISCOUNT_MEMBER_NUMBER]==memberID) & (ddN > pTN)):
-        discounts.append(line)
+    if (len discountDatabase)>0):
+        for line in discountDatabase:
+            discDate=slash.split(line[DISCOUNT_DATE])
+            ddN=int("{0:s}{1:02d}{2:02d}".format(discDate[2],int(discDate[0]),int(discDate[1])))
+        if ((line[DISCOUNT_MEMBER_NUMBER]==memberID) & (ddN > pTN)):
+            discounts.append(line)
     return discounts
 
 def balanceDue(memberRecord):
@@ -494,9 +495,10 @@ def getAmountDue(memberRecord,memberDiscounts,DEBUG=False):
     periodStart=calcBillingPeriodStart(memberRecord)
     periodEnd=calcBillingPeriodEnd(memberRecord)
     adjustments=0
-    for line in memberDiscounts:
-        thisDiscountAmount=int(line[DISCOUNT_AMOUNT])
-        adjustments=adjustments+thisDiscountAmount
+    if (len(memberDiscounts) > 0):
+        for line in memberDiscounts:
+            thisDiscountAmount=int(line[DISCOUNT_AMOUNT])
+            adjustments=adjustments+thisDiscountAmount
 
     amtDue=(fees+adjustments)
     return amtDue
@@ -520,13 +522,14 @@ def sendDueNotice(memberRecord,memberDiscounts,DEBUG=False):
     else:
         outEmail=outEmail.replace("#RFID_MESSAGE#","")
     adjustments=0
-    for line in memberDiscounts:
-        thisDiscountAmount=int(line[DISCOUNT_AMOUNT])
-        adjustments=adjustments+thisDiscountAmount
-        thisDiscountDescription=line[DISCOUNT_DESCRIPTION]
-        replacementString="#DISCOUNTS#\n                      $%d" % thisDiscountAmount 
-        replacementString=replacementString+"    %s" % thisDiscountDescription
-        outEmail=outEmail.replace("#DISCOUNTS#",replacementString)
+    if (len(memberDiscounts) > 0):
+        for line in memberDiscounts:
+            thisDiscountAmount=int(line[DISCOUNT_AMOUNT])
+            adjustments=adjustments+thisDiscountAmount
+            thisDiscountDescription=line[DISCOUNT_DESCRIPTION]
+            replacementString="#DISCOUNTS#\n                      $%d" % thisDiscountAmount 
+            replacementString=replacementString+"    %s" % thisDiscountDescription
+            outEmail=outEmail.replace("#DISCOUNTS#",replacementString)
 
     amtDue="$%d" % (fees+adjustments)
     if (adjustments == 0):
