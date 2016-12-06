@@ -630,6 +630,7 @@ def getEndOfThisMonthYYYYMMDD():
 
 def calcBillingPeriodStartDateTime(memberRecord):
    slash=re.compile(r'\/')
+   dash=re.compile(r'\-')
    today=datetime.date.today()
    todayNum=int(today.strftime('%Y%02m%02d'))
    paidThru=slash.split(memberRecord[DBCOL_PAID_THRU]) 
