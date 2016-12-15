@@ -1,0 +1,6 @@
+AuthType Basic 
+AuthName PrivateCOG
+AuthUserFile /var/www/html/cardsystem/private/psswd
+<Limit GET POST PUT> 
+require valid-user 
+</Limit>
