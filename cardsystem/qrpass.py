@@ -44,9 +44,10 @@ try:
   else:
 	cardsystem.recordSignIn(member_id,name,zip,email,"")
         print "Welcome %s! Your Day Pass with QR Code %s has been validated. You have been automatically signed in and the door is unlocked, please come in!" % (name,qrcode)
-  
-  c=os.popen("links --source http://192.168.13.22/door1 &> /dev/null",'r');
-  c.close()
+ 
+  # Code to open the actual door has been moved to the internal device reading
+  # the QR code, since this test is taking place off-site and is inaccesible
+  # to the control system 
 
 except:
   cgi.print_exception()

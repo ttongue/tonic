@@ -1,5 +1,10 @@
 #!/usr/bin/python
 
+
+import sys
+sys.path.append("../lib")
+sys.path.append("../config")
+
 import cgi
 import MySQLdb as mdb
 import seltzerCfg as seltzer
