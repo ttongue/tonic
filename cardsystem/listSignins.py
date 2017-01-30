@@ -68,7 +68,7 @@ def generateDateForm(year, month, day):
 	else:
 		formOut=formOut+"<option value='%s'>%s"%("%02d"%d,d)
     formOut=formOut+"</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name=year> "
-    for y in range(2014,2017):
+    for y in range(2014,2020):
 	if ("%s"%y == year):
 		formOut=formOut+"<option value='%s' selected>%s"%(y,y)
 	else:
