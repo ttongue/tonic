@@ -21,7 +21,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 
-NUMBER_TO_CREATE=50
+NUMBER_TO_CREATE=5
 NUMBER_OF_MONTHS=1
 DEBUG=False
 
