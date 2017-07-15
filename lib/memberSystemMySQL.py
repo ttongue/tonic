@@ -286,7 +286,7 @@ def getNextMemberNumber():
     nextNumber=0;
     with con:
         cur=con.cursor()
-        query="select memberNumber FROM %s WHERE memberNumber IS NOT NULL ORDER BY ABS(memberNumber)" % MYSQL_CONTACT_TABLE
+        query="select memberNumber FROM %s WHERE memberNumber IS NOT NULL ORDER BY CAST(memberNumber as UNSIGNED)" % MYSQL_CONTACT_TABLE
         cur.execute(query)
         rows = cur.fetchall()
         for row in rows:
